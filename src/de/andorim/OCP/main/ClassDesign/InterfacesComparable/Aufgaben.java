@@ -75,7 +75,7 @@ public class Aufgaben {
 
     private static void printOSArray(OS[] os) {
         for (int i = 0; i < os.length; i++) {
-            System.out.format("| %1$1s. | %2$10s | %3$3s |\n", i, os[i].name, os[i].version);
+            System.out.format("| %1$2d. | %2$10s | %3$3s |\n", i, os[i].name, os[i].version);
         }
     }
 

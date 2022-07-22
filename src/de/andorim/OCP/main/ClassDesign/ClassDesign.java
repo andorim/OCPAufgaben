@@ -18,6 +18,7 @@ public class ClassDesign {
             System.out.println();
             System.out.println("### Aufgaben Class Design ###");
             System.out.println("1. Interfaces - Comparable");
+            System.out.println("2. Interfaces - String Transform");
             System.out.println("99. Zurück");
             System.out.println("##########################");
             try {
@@ -26,6 +27,9 @@ public class ClassDesign {
                 switch (eingabe) {
                     case 1:
                         de.andorim.OCP.main.ClassDesign.InterfacesComparable.Aufgaben.menu();
+                        break;
+                    case 2:
+                        de.andorim.OCP.main.ClassDesign.InterfaceStringTransform.Aufgaben.menu();
                         break;
                     case 99:
                         weiter = false;
