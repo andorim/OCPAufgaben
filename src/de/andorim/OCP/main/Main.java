@@ -14,6 +14,8 @@ public class Main {
             System.out.println();
             System.out.println("### Main Menu ###");
             System.out.println("1. Class Design");
+            System.out.println("2. Exceptions");
+            System.out.println("3. Collections");
             System.out.println("99. Beenden");
             System.out.println("#################");
 
@@ -23,6 +25,12 @@ public class Main {
                 switch (eingabe) {
                     case 1:
                         de.andorim.OCP.main.ClassDesign.ClassDesign.menu();
+                        break;
+                    case 2:
+                        de.andorim.OCP.main.Exceptions.Exceptions.menu();
+                        break;
+                    case 3:
+                        de.andorim.OCP.main.Collections.Collections.menu();
                         break;
                     case 99:
                         weiter = false;

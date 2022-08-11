@@ -56,7 +56,7 @@ public class Aufgaben {
     }
 
     private static void A3() {
-        Transformator tr = str -> {
+        Transformator<String> tr = str -> {
             return str + ".";
         };
         String[] arr = {"mo", "di", "mi"};
@@ -67,7 +67,7 @@ public class Aufgaben {
     }
 
     private static void A4() {
-        Transformator tr = str -> {
+        Transformator<String> tr = str -> {
             return str + "(" + str.length() + ")";
         };
         String[] arr = {"mo", "di", "mi"};
@@ -86,9 +86,9 @@ public class Aufgaben {
         return newList;
     }
 
-    private static ArrayList<String> transform(String[] array, Transformator tr) {
-        ArrayList<String> newList = new ArrayList<String>();
-        for (String str : array) {
+    private static <T> ArrayList<T> transform(T[] array, Transformator<T> tr) {
+        ArrayList<T> newList = new ArrayList<T>();
+        for (T str : array) {
             newList.add(tr.transform(str));
         }
         return newList;
